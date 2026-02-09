@@ -22,9 +22,9 @@ export default class List extends Component {
     return (
         <div className="row">
         {
-            isFirst ? <h2>please search</h2>:
-            isLoading ? <h2>Loading...</h2>:
-            err ? <h2>{err}</h2>:
+            isFirst ? <h2 style={{ textAlign: 'center' }}>please search</h2>:
+            isLoading ? <h2 style={{ textAlign: 'center' }}>Loading...</h2>:
+            err ? <h2 style={{ textAlign: 'center' }}>{err}</h2>:
             users.map((userObj)=>{
                 return (
                     <div key={userObj.id} className="card">
